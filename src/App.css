@@ -1,38 +1,159 @@
-.App {
+.header{
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  color:rgb(50, 97, 237);
+  background-color: rgb(219, 223, 242);
+  padding:10px;
+  /* margin:10px; */
+}
+
+.add-box,.profile-box{
+  margin:auto;
+  margin-top: 40px;
+  padding:10px;
+  text-align: center;
+  border: 1px solid rgb(162, 158, 158);
+  border-radius: 5px;
+  width:60%;
+}
+.add-contact,.contact-list,.contact-details{
+  font-size:30px;
+  margin:5px;
+  color:rgb(40, 74, 175);
+  font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+form{
+  margin:10px;
+}
+.label-text{
+  font-size: 20px;
+  padding:10px;
+  color:rgb(40, 74, 175);
+  font-weight: bold;
+}
+input{
+  font-size: 15px;
+  border-radius: 5px;
+  border:1px solid rgb(162, 158, 158);
+  padding:10px;
+
+}
+.field{
+  padding:10px;
+  margin:20px;
+}
+button{
+  background-color: rgb(33, 123, 249);
+  color:white;
+  font-size: 15px;
+  border:none;
+  border-radius: 10px;
+  padding:15px;
+  cursor: pointer;
+  box-shadow: 2px 2px rgb(186, 186, 222);
+}
+button:hover{
+  background-color: rgb(56, 56, 241);
+  
+}
+.contact-list-header{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width:90%;
+  margin:auto;
+}
+.list-box{
+  margin:auto;
+  width:90%;
+  margin-top:30px;
+}
+.list{
+  margin-left:10px;
+  padding:20px;
+  border-bottom: 1px solid rgb(165, 164, 164);
+  display:flex;
+  flex-direction: row;
+  justify-content:space-between;
+}
+.details{
+  display:flex;
+  flex-direction: row;
+}
+.image{
+  margin:10px;
+}
+.name{
+  font-size: 20px;
+  font-weight: bold;
+  padding:5px;
+}
+.email,.phone{
+  padding:5px;
+}
+.delete-icon{
+  color:rgb(196, 20, 20);
+  cursor:pointer;
+}
+.delete-icon:hover{
+  color:red;
+}
+
+.detail-box{
+  width:80%;
+  margin:auto;
+  margin-top:40px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.profile-box{
+  margin-bottom:30px;
+  border:2px solid grey;
+  width:40%;
+  height:auto;
+} 
+img{
+  width:200px;
+  height:200px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+.profile-details{
+  margin:10px;
+  padding:10px;
+  font-size: 20px;
+  display:flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-evenly;
+}
+.profile-name{
+  margin:10px;
+  font-size: 30px;
+  font-weight: bold;
+  color:rgb(40, 74, 175);
 }
 
-.App-link {
-  color: #61dafb;
+.link{
+  text-decoration: none;
+  color:rgb(8, 8, 88)
+}
+.link:hover{
+  color:rgb(6, 6, 207);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#show-contact{
+  text-align: center;
+  display:none;
+  margin-top: 20px;
+}
+.msg{
+  color:rgb(35, 174, 35);
+  font-size: 15px;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+}
+.show-button{
+  font-size: 12px;
 }
